@@ -15,16 +15,12 @@ function fizzbuzz(num){
     var numRemainder5 = i % 5;
     if (numRemainder3 !== 0 && numRemainder5 !== 0) {
       theFizzler = theFizzler + ".";
-      console.log(theFizzler);
     } else if (numRemainder3 === 0 && numRemainder5 !== 0) {
       theFizzler = theFizzler + "fizz";
-      console.log(theFizzler);
     } else if (numRemainder3 !== 0 && numRemainder5 === 0) {
       theFizzler = theFizzler + "buzz";
-      console.log(theFizzler);
     } else if (numRemainder3 === 0 && numRemainder5 === 0) {
       theFizzler = theFizzler + "FizZBuzZ";
-      console.log(theFizzler);
     }
   }
   return theFizzler;
