@@ -9,10 +9,19 @@
  *
 */
 
-// function makePairs(inputArray){
-//   var pairsArray = [pairOne,PairTwo,PairThree,PairFour];
-//   return pairsArray;
-// }
+function makePairs(inputArray){
+  var pairOne = []; var pairTwo = []; var pairThree = []; var pairFour = [];
+  var pairsArray = [];
+  pairOne = [inputArray[0], inputArray[1]];
+  pairTwo = [inputArray[2], inputArray[3]];
+  pairThree = [inputArray[4], inputArray[5]];
+  pairFour = [inputArray[6], inputArray[7]];
+  pairsArray.push(pairOne);
+  pairsArray.push(pairTwo);
+  pairsArray.push(pairThree);
+  pairsArray.push(pairFour);
+  return pairsArray;
+}
 
 var pairsOutput = makePairs([10,20,30,40,50,60,70,80])
 //=> [ [10,20], [30,40], [50,60], [70,80] ]
